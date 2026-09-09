@@ -168,9 +168,20 @@ strong { color: var(--ink); font-weight: 600; }
 .hero h1 { margin-block: 20px 24px; max-width: 17ch; }
 .hero .lede { max-width: 62ch; }
 
+.hero-authors {
+  margin-top: 34px; padding-top: 26px; border-top: 1px solid var(--line);
+}
+.hero-authors p {
+  margin: 12px 0 0; color: var(--ink);
+  font-size: clamp(.92rem, 1.5vw, 1.02rem); font-weight: 500; line-height: 1.6;
+}
+.hero-authors p span {
+  color: var(--ink-3); font-weight: 400; padding-inline: 10px;
+}
+
 .hero-meta {
   display: flex; flex-wrap: wrap; gap: 8px 28px;
-  margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line);
+  margin-top: 22px;
   font-family: var(--mono); font-size: 0.72rem; color: var(--ink-3);
 }
 .hero-meta b { color: var(--ink-2); font-weight: 500; }
@@ -447,7 +458,8 @@ details.formula .formula-body p { margin-bottom: .8em; }
 /* ---------- 17. Rodapé ---------- */
 .footer { border-top: 1px solid var(--line); padding-block: 40px 56px; }
 .footer-inner { display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: baseline; }
-.footer p { font-size: 0.78rem; color: var(--ink-3); margin: 0; max-width: 62ch; }
+.footer p { font-size: 0.78rem; color: var(--ink-3); margin: 0; max-width: 62ch; line-height: 1.7; }
+.footer p b { color: var(--ink-2); font-weight: 600; }
 .disclaimer { margin-top: 24px; padding: 16px 18px; border: 1px solid var(--line); border-left: 3px solid var(--warning); border-radius: 8px; }
 .disclaimer p { font-size: 0.79rem; color: var(--ink-3); }
 
