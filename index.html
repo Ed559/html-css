@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minério em deflação, aço atrás de muros — Tese Vale x Gerdau</title>
+<meta name="description" content="Tese de investimento integrada macro + fundamentalista sobre a cadeia ferrosa brasileira: Vale (VALE3) e Gerdau (GGBR4).">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ============================ NAV ============================ -->
+<nav class="nav" aria-label="Seções do relatório">
+  <div class="wrap nav-inner">
+    <a class="nav-mark" href="#topo">VALE&nbsp;×&nbsp;GERDAU <span>· tese integrada</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#resumo">00 Resumo</a>
+      <a href="#macro">01 Macro</a>
+      <a href="#fundamentos">02 Fundamentos</a>
+      <a href="#simulador">03 Simulador</a>
+      <a href="#conclusao">04 Conclusão</a>
+      <a href="#riscos">05 Riscos</a>
+      <a href="#fontes">06 Fontes</a>
+    </div>
+  </div>
+</nav>
+
+<main id="conteudo">
+
+<!-- ============================ HERO ============================ -->
+<header class="hero" id="topo">
+  <div class="wrap">
+    <span class="eyebrow">Atividade conjunta · Macro + Fundamentalista</span>
+    <h1>Minério em deflação, aço atrás de muros.</h1>
+    <p class="lede">
+      A demanda chinesa por aço parou de crescer no exato momento em que 120&nbsp;Mt de nova
+      oferta de minério entram no mercado. Ao mesmo tempo, o excedente chinês de aço está sendo
+      bloqueado por uma muralha tarifária global. A consequência é uma <strong>separação de
+      destinos dentro da mesma cadeia</strong>: o elo da matéria-prima entra em compressão de
+      margem, e o elo da transformação, em mercados protegidos, ganha poder de preço.
+      Esta tese testa as duas pontas — <strong>Vale</strong> na origem, <strong>Gerdau</strong>
+      na transformação.
+    </p>
+
+    <div class="verdicts">
+      <div class="verdict">
+        <span class="verdict-dot vale" aria-hidden="true"></span>
+        <span class="verdict-ticker">VALE3</span>
+        <span class="verdict-call"><b>MANTER</b> — máquina de caixa, não de crescimento</span>
+      </div>
+      <div class="verdict">
+        <span class="verdict-dot gerdau" aria-hidden="true"></span>
+        <span class="verdict-ticker">GGBR4</span>
+        <span class="verdict-call"><b>COMPRAR</b> — o ativo alinhado ao macro</span>
+      </div>
+    </div>
+
+    <div class="hero-meta">
+      <span>Setor: <b>Mineração &amp; Siderurgia</b></span>
+      <span>Base de dados: <b>2T26</b></span>
+      <span>Data: <b>09/09/2026</b></span>
+      <span>Horizonte: <b>2026 – 2030</b></span>
+    </div>
+  </div>
+</header>
+
+<!-- ============================ 00 RESUMO ============================ -->
+<section class="section" id="resumo">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">00 · Sumário executivo</span>
+      <h2>A tese em três movimentos</h2>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card reveal">
+        <span class="eyebrow">Macro</span>
+        <h3 style="margin-top:12px">O ciclo virou pelo lado da oferta</h3>
+        <p>A China produziu <strong>menos de 1 bilhão de toneladas de aço</strong> pela primeira
+        vez desde 2019 e a worldsteel projeta mais um ano de contração (−1,5% em 2026). Do outro
+        lado, <strong>Simandou</strong> adiciona até 120 Mt/ano — cerca de 5% da oferta
+        transoceânica. O BTG projeta sobreoferta de <strong>65 a 70 Mt</strong> em 2026.</p>
+      </article>
+
+      <article class="card reveal">
+        <span class="eyebrow">Fundamentos</span>
+        <h3 style="margin-top:12px">Os balanços já contam a história</h3>
+        <p>No 2T26 a Vale entregou produção recorde e <strong>lucro 43% menor</strong>: volume
+        não compensa preço. A Gerdau fez o <strong>melhor EBITDA desde o 3T23</strong> (+33,9%),
+        com <strong>76% vindo da América do Norte</strong> — o mercado mais protegido do mundo,
+        com tarifa de 50%.</p>
+      </article>
+
+      <article class="card reveal">
+        <span class="eyebrow">Veredito</span>
+        <h3 style="margin-top:12px">O valor migrou de elo</h3>
+        <p>Vale é hoje um <strong>ativo de renda</strong>: 3,8x EV/EBITDA, dividend yield de
+        7,5% a 10% e passivos de Mariana/Brumadinho em curva descendente. Gerdau é o
+        <strong>ativo de posicionamento</strong>: alavancagem de 0,69x, rota elétrica de baixo
+        carbono e receita ancorada atrás das tarifas.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 01 MACRO ============================ -->
+<section class="section" id="macro">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">01 · Tese macro</span>
+      <h2>O que tende a acontecer com este setor?</h2>
+      <p>Cinco variáveis explicam quase tudo na cadeia ferrosa até 2030: a demanda chinesa de
+      aço, o choque de oferta de minério, a curva de custo, a política comercial e o custo de
+      capital doméstico. Elas não empurram o setor todo na mesma direção — e é exatamente aí
+      que mora a tese.</p>
+    </div>
+
+    <!-- Painel de variáveis -->
+    <div class="grid grid-3 reveal" style="margin-bottom:44px">
+      <div class="stat">
+        <span class="stat-label">Minério 62% Fe</span>
+        <div class="stat-value">US$&nbsp;99<small>/t</small></div>
+        <p class="stat-note">Futuro com liquidação em set/26. O índice Platts IODEX havia recuado
+        a US$&nbsp;95,25/t em agosto.</p>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Aço bruto · China</span>
+        <div class="stat-value">&lt;&nbsp;1&nbsp;bi<small>t/ano</small></div>
+        <p class="stat-note">Primeira vez abaixo de 1 bilhão de toneladas desde 2019. A demanda
+        interna ainda cai 1,5% em 2026 (worldsteel).</p>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Simandou · capacidade</span>
+        <div class="stat-value">120<small>Mt/ano</small></div>
+        <p class="stat-note">Equivalente a cerca de 5% de toda a oferta transoceânica de minério
+        de ferro. Ramp-up de 2026 revisado para 15 Mt.</p>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Tarifa EUA · Section 232</span>
+        <div class="stat-value">50<small>%</small></div>
+        <p class="stat-note">Desde 06/04/2026 incide sobre o <b>valor aduaneiro cheio</b>,
+        inclusive derivados dos capítulos 72 a 76.</p>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Selic · fim de 2026</span>
+        <div class="stat-value">13,75<small>% a.a.</small></div>
+        <p class="stat-note">Focus de 31/08/2026. Para 2027 o mercado projeta 12,00% — o
+        gatilho da construção civil brasileira.</p>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Câmbio · fim de 2026</span>
+        <div class="stat-value">R$&nbsp;5,20</div>
+        <p class="stat-note">Real forte comprime o resultado em reais de exportadoras e reduz a
+        proteção natural contra o aço importado.</p>
+      </div>
+    </div>
+
+    <!-- 1.1 Choque de oferta -->
+    <h3 class="reveal" style="margin-bottom:14px">1.1 &nbsp;O choque de oferta: Simandou muda a curva, não o ano</h3>
+    <p class="reveal" style="max-width:70ch">
+      Simandou, na Guiné, é o maior projeto greenfield de minério de ferro em décadas e o
+      principal fator isolado de formação de preço da década. O ponto que o mercado subestimou
+      não é <em>se</em> a oferta chega, mas <em>quando</em>: o RBC revisou a fase de ramp-up de
+      30 para <strong>48 meses</strong> e, por isso, elevou em <strong>13%</strong> suas
+      projeções de preço para 2026–2029, apontando a Vale como a “grande vencedora” do atraso.
+      A Vale, por sua vez, já cortou o guidance de produção de 2026 de 340–360 Mt para
+      <strong>335–345 Mt</strong> — sinal de que a empresa escolheu defender preço em vez de
+      empurrar volume num mercado que não absorve.
+    </p>
+
+    <div class="grid grid-2 reveal" style="margin-block:28px 44px">
+      <figure class="figure" style="margin:0">
+        <div class="figure-head">
+          <div class="figure-title">Ramp-up de Simandou: 30 meses vs. 48 meses</div>
+          <div class="figure-sub">Trajetória até a capacidade plena de 120 Mt/ano. O atraso de
+          18 meses é o que sustenta o preço do minério em 2026–27.</div>
+        </div>
+        <div class="figure-body" data-chart="simandou"></div>
+        <figcaption class="figure-source">Capacidade e ramp-up de 2026 (15 Mt): Vale / InfoMoney.
+        Cenários de 30 e 48 meses: RBC Capital Markets. Interpolação entre os marcos é
+        ilustrativa.</figcaption>
+      </figure>
+
+      <figure class="figure" style="margin:0">
+        <div class="figure-head">
+          <div class="figure-title">Onde as casas veem o minério</div>
+          <div class="figure-sub">Dispersão das projeções para 2026. A amplitude de US$ 19/t
+          entre a menor e a maior estimativa é, na prática, uma aposta sobre Simandou.</div>
+        </div>
+        <div class="figure-body" data-chart="precos"></div>
+        <figcaption class="figure-source">BTG Pactual, Genial Investimentos, S&amp;P Global;
+        índice Platts IODEX 62% Fe (ago/26) e futuro 62% (set/26).</figcaption>
+      </figure>
+    </div>
+
+    <!-- 1.2 Curva de custo -->
+    <h3 class="reveal" style="margin-bottom:14px">1.2 &nbsp;A curva de custo decide quem sobrevive a US$ 85/t</h3>
+    <p class="reveal" style="max-width:70ch">
+      Preço baixo de commodity não elimina o produtor de baixo custo — elimina o produtor
+      marginal. Este é o argumento central a favor da Vale mesmo num cenário de deflação: a
+      empresa opera no primeiro quartil da curva global. O alerta, porém, é que
+      <strong>essa vantagem está encolhendo</strong>: a Vale elevou o guidance de custo caixa C1
+      de US$ 20,0–21,5/t para <strong>US$ 22,5–23,5/t</strong>, e o C1 do 2T26 saiu a
+      US$&nbsp;24,1/t. Custo subindo enquanto o preço cai é compressão de margem pelos dois lados.
+    </p>
+
+    <figure class="figure reveal" style="margin:28px 0 44px">
+      <div class="figure-head">
+        <div class="figure-title">Curva de custo do minério de ferro entregue na China</div>
+        <div class="figure-sub">Custo caixa aproximado (C1 + frete + royalties), em US$/t. A
+        linha marca o preço de referência atual: tudo à direita dela opera no vermelho.</div>
+      </div>
+      <div class="figure-body" data-chart="curva"></div>
+      <figcaption class="figure-source"><b>Estimativa ilustrativa.</b> O C1 da Vale
+      (US$&nbsp;22,5–23,5/t de guidance) é dado reportado; os demais pontos são ordens de grandeza
+      de mercado para posicionar a curva, não números divulgados pelas companhias.</figcaption>
+    </figure>
+
+    <!-- 1.3 China -->
+    <h3 class="reveal" style="margin-bottom:14px">1.3 &nbsp;China: fim do superciclo, não fim do mundo</h3>
+    <div class="grid grid-2 reveal" style="margin-block:20px 44px">
+      <div class="card">
+        <h4>O que está estruturalmente quebrado</h4>
+        <ul class="ticks con" style="margin-top:12px">
+          <li>A produção de aço bruto caiu <b>abaixo de 1 bilhão de toneladas</b> pela primeira
+          vez desde 2019 — o pico de consumo de aço da China ficou para trás.</li>
+          <li>A worldsteel projeta contração de <b>−1,5% na demanda chinesa em 2026</b>, ainda
+          que em desaceleração conforme o imobiliário se aproxima do fundo.</li>
+          <li>Executivos do próprio setor estimam ser necessário remover <b>20% a 30% da
+          capacidade instalada</b> chinesa. Enquanto isso não acontece, o excedente vira
+          exportação.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>O que ainda pode surpreender para cima</h4>
+        <ul class="ticks pro" style="margin-top:12px">
+          <li>Novo pacote imobiliário em discussão: <b>corte de juros, hipotecas subsidiadas e
+          flexibilização das restrições de compra</b> — a notícia sozinha já moveu o minério.</li>
+          <li>A correção do mercado imobiliário se aproxima do <b>ponto mais baixo</b>; a
+          derivada da demanda melhora antes do nível.</li>
+          <li>Se a China de fato cortar capacidade de aço, o preço do <b>aço</b> sobe e o do
+          <b>minério</b> cai — o que separa ainda mais a sorte da Gerdau da sorte da Vale.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 1.4 Muralha -->
+    <h3 class="reveal" style="margin-bottom:14px">1.4 &nbsp;A muralha tarifária: o aço deixou de ser uma commodity global</h3>
+    <p class="reveal" style="max-width:70ch">
+      Esta é a variável mais subestimada da tese. O excedente chinês não desaparece — ele é
+      redirecionado. E a resposta do mundo, entre 2025 e 2026, foi erguer barreiras
+      simultaneamente nos três maiores blocos consumidores. O efeito prático é que
+      <strong>produzir aço dentro do mercado protegido passou a valer mais do que produzir aço
+      barato fora dele</strong>.
+    </p>
+
+    <div class="grid grid-3 reveal" style="margin-block:24px 24px">
+      <div class="card">
+        <span class="eyebrow">Estados Unidos</span>
+        <h4 style="margin-top:12px">Section 232 · 50%</h4>
+        <p style="font-size:.9rem">Tarifa de 50% sobre aço e alumínio. Desde <b>06/04/2026</b>
+        incide sobre o valor aduaneiro cheio do produto, e não mais sobre o conteúdo metálico
+        rateado — o que amplia bastante a proteção nos derivados.</p>
+      </div>
+      <div class="card">
+        <span class="eyebrow">Brasil</span>
+        <h4 style="margin-top:12px">GECEX 849 · 25%</h4>
+        <p style="font-size:.9rem">Em 30/01/2026 a tarifa subiu de 10,8%–12,6% para <b>25%</b>
+        em laminados a quente, chapas, inox e fio-máquina. Somam-se antidumping definitivo de 5
+        anos sobre pré-pintados da China e Índia e o sistema de cota-tarifa renovado para
+        2026–27.</p>
+      </div>
+      <div class="card">
+        <span class="eyebrow">União Europeia</span>
+        <h4 style="margin-top:12px">CBAM · fase definitiva</h4>
+        <p style="font-size:.9rem">Desde <b>01/01/2026</b> o importador europeu compra
+        certificados de carbono sobre a emissão embutida. Estimativas apontam acréscimo de custo
+        acima de <b>10%</b> em produtos intensivos — e premiam quem produz com baixa emissão.</p>
+      </div>
+    </div>
+
+    <div class="callout callout--neutral reveal" style="margin-bottom:44px">
+      <span class="eyebrow">Leitura</span>
+      <p>A muralha funciona, mas não é hermética: as importações brasileiras de aço caíram
+      <strong>17,6% no primeiro semestre de 2026</strong> — e voltaram a acelerar em junho, com
+      476 mil toneladas no mês. A proteção é um piso para a margem doméstica, não um teto para o
+      volume importado.</p>
+    </div>
+
+    <!-- 1.5 Brasil -->
+    <h3 class="reveal" style="margin-bottom:14px">1.5 &nbsp;Brasil: o custo do dinheiro é a variável que falta destravar</h3>
+    <p class="reveal" style="max-width:70ch">
+      Com Selic em <strong>13,75%</strong>, PIB projetado em <strong>1,92%</strong> e IPCA em
+      <strong>5,01%</strong> para 2026, a construção civil — principal cliente de aços longos —
+      opera sob custo de capital proibitivo. O consenso já projeta <strong>Selic de 12,00% em
+      2027</strong>. Esse é o gatilho doméstico da tese: hoje o Brasil é um peso no resultado da
+      Gerdau; num ciclo de corte de juros com antidumping em vigor, vira alavanca.
+      O câmbio de R$&nbsp;5,20 corta para os dois lados: alivia a inflação, mas reduz a proteção
+      natural contra o importado e comprime em reais o resultado exportador da Vale.
+    </p>
+
+    <div class="callout reveal" style="margin-top:36px">
+      <span class="eyebrow">A tese macro em uma frase</span>
+      <p>Nos próximos cinco anos, o <strong>volume</strong> de minério deixa de gerar valor —
+      excesso de oferta e demanda chinesa em declínio empurram o preço para a faixa de
+      US$&nbsp;85–105/t — enquanto o <strong>aço regionalizado atrás de barreiras tarifárias</strong>
+      e os <strong>metais da eletrificação</strong> absorvem o valor que sai da matéria-prima.
+      A pergunta fundamentalista, portanto, não é “quem produz mais”, e sim
+      <strong>“quem está do lado certo do muro”</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 02 FUNDAMENTOS ============================ -->
+<section class="section" id="fundamentos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">02 · Análise fundamentalista</span>
+      <h2>Qual empresa está mais preparada para isso?</h2>
+      <p>Todos os números abaixo são do <strong>2T26</strong>, o último trimestre divulgado.
+      A comparação é deliberadamente assimétrica: a Vale é avaliada pela capacidade de
+      <em>resistir</em> ao cenário; a Gerdau, pela capacidade de <em>capturá-lo</em>.</p>
+    </div>
+
+    <div class="tabs reveal" role="tablist" aria-label="Empresas analisadas">
+      <button class="tab" role="tab" data-co="vale" aria-selected="true" aria-controls="p-vale" id="t-vale"><span class="dot"></span>Vale · VALE3</button>
+      <button class="tab" role="tab" data-co="gerdau" aria-selected="false" aria-controls="p-gerdau" id="t-gerdau"><span class="dot"></span>Gerdau · GGBR4</button>
+      <button class="tab" role="tab" data-co="vs" aria-selected="false" aria-controls="p-vs" id="t-vs"><span class="dot"></span>Frente a frente</button>
+    </div>
+
+    <!-- ---------- Painel Vale ---------- -->
+    <div class="tabpanel" id="p-vale" role="tabpanel" aria-labelledby="t-vale" tabindex="0">
+      <div class="grid grid-4" style="margin-bottom:24px">
+        <div class="stat">
+          <span class="stat-label">Receita líquida · 2T26</span>
+          <div class="stat-value">R$&nbsp;53,0<small>bi</small></div>
+          <p class="stat-note"><span class="stat-delta up">▲ 6% a/a</span> · +9% t/t</p>
+        </div>
+        <div class="stat">
+          <span class="stat-label">EBITDA ajustado</span>
+          <div class="stat-value">R$&nbsp;18,5<small>bi</small></div>
+          <p class="stat-note"><span class="stat-delta down">▼ 3% a/a</span> · margem ≈ 35%</p>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Lucro líquido</span>
+          <div class="stat-value">R$&nbsp;6,85<small>bi</small></div>
+          <p class="stat-note"><span class="stat-delta down">▼ 43% a/a</span> · US$ 1,37 bi (−35%)</p>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Produção de minério</span>
+          <div class="stat-value">84,3<small>Mt</small></div>
+          <p class="stat-note"><span class="stat-delta up">▲ 1% a/a</span> · melhor 2T desde 2018</p>
+        </div>
+      </div>
+
+      <div class="callout reveal" style="margin-bottom:28px">
+        <span class="eyebrow">O número que resume a Vale hoje</span>
+        <p>Produção recorde para um segundo trimestre e <strong>lucro 43% menor</strong>.
+        Quando volume sobe e resultado cai, a variável de controle não está na empresa — está no
+        preço. Essa é a definição operacional de um ativo de ciclo maduro.</p>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom:24px">
+        <div class="card">
+          <h4 style="margin-bottom:14px">Saúde financeira e estrutura de capital</h4>
+          <div class="kv">
+            <div class="kv-row"><span class="kv-k">Dívida líquida (1T26)</span><span class="kv-v">US$ 13,6 bi</span></div>
+            <div class="kv-row"><span class="kv-k">Dívida líquida expandida (jun/26)</span><span class="kv-v">US$ 16,68 bi<small>−US$ 1,12 bi no trimestre</small></span></div>
+            <div class="kv-row"><span class="kv-k">Faixa-alvo da companhia</span><span class="kv-v">US$ 10 – 20 bi<small>dentro do intervalo</small></span></div>
+            <div class="kv-row"><span class="kv-k">Custo caixa C1 (2T26)</span><span class="kv-v">US$ 24,1/t<small>guidance elevado a US$ 22,5–23,5</small></span></div>
+            <div class="kv-row"><span class="kv-k">Capex 2026</span><span class="kv-v">US$ 5,4 – 5,7 bi<small>~US$ 1,1 bi em crescimento</small></span></div>
+            <div class="kv-row"><span class="kv-k">Guidance de minério 2026</span><span class="kv-v">335 – 345 Mt<small>cortado de 340–360 Mt</small></span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-bottom:14px">Retorno ao acionista e passivos legados</h4>
+          <div class="kv">
+            <div class="kv-row"><span class="kv-k">Proventos do 2T26</span><span class="kv-v">R$ 2,03/ação<small>US$ 1,7 bi · DY anualizado 5,3%</small></span></div>
+            <div class="kv-row"><span class="kv-k">Recompra anunciada</span><span class="kv-v">100 mi ações<small>≈ 2,3% do capital</small></span></div>
+            <div class="kv-row"><span class="kv-k">Dividend yield (12 meses)</span><span class="kv-v">7,1%<small>R$ 5,61 por ação</small></span></div>
+            <div class="kv-row"><span class="kv-k">Provisão Brumadinho (jun/26)</span><span class="kv-v">US$ 1,77 bi</span></div>
+            <div class="kv-row"><span class="kv-k">Provisão Samarco (jun/26)</span><span class="kv-v">US$ 2,10 bi</span></div>
+            <div class="kv-row"><span class="kv-k">Desembolso Brumadinho</span><span class="kv-v">900 → 700 → 300<small>US$ mi em 2026, 2027 e 2028</small></span></div>
+          </div>
+        </div>
+      </div>
+
+      <figure class="figure" style="margin:0 0 24px">
+        <div class="figure-head">
+          <div class="figure-title">O passivo de Mariana e Brumadinho está saindo do caminho</div>
+          <div class="figure-sub">Desembolso anual projetado com o acordo de Brumadinho, em
+          US$ milhões. 2026 é o pico: a partir daí, cada dólar que deixa de ser desembolsado é
+          um dólar disponível para dividendo, recompra ou capex de crescimento.</div>
+        </div>
+        <div class="figure-body" data-chart="passivo"></div>
+        <figcaption class="figure-source">Projeções de desembolso divulgadas pela Vale.</figcaption>
+      </figure>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h4>Vantagens competitivas</h4>
+          <ul class="ticks pro" style="margin-top:12px">
+            <li><b>Posição na curva de custo.</b> Primeiro quartil global. Num cenário de
+            US$ 85/t, a Vale ainda gera caixa enquanto o produtor marginal fecha.</li>
+            <li><b>Qualidade do minério.</b> Teor mais alto reduz a emissão por tonelada de aço
+            do cliente — ativo estratégico num mundo com CBAM.</li>
+            <li><b>Opcionalidade em metais básicos.</b> Guidance de cobre elevado para
+            360–380 kt e de níquel para 185–200 kt; produção de cobre subiu 6% e a de níquel 4%
+            no 2T26. É a única ponte da Vale para a tese de eletrificação.</li>
+            <li><b>Valuation.</b> EV/EBITDA de ~3,8x, com desconto de 15% frente ao consenso e
+            24% frente aos pares globais.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Fragilidades e pontos de atenção</h4>
+          <ul class="ticks con" style="margin-top:12px">
+            <li><b>Compressão por dois lados.</b> Guidance de C1 revisado <em>para cima</em>
+            enquanto o preço da commodity é revisado <em>para baixo</em>.</li>
+            <li><b>Guidance de produção cortado</b> (340–360 → 335–345 Mt): admite um mercado
+            que não absorve volume adicional.</li>
+            <li><b>Concentração de receita</b> em uma commodity cuja demanda-âncora é
+            estruturalmente decrescente.</li>
+            <li><b>Risco reputacional e regulatório residual.</b> Provisões caíram, mas
+            barragem e licenciamento seguem sendo risco de cauda com impacto desproporcional.</li>
+            <li><b>Exposição política.</b> Corporação sem controlador definido, em setor
+            estratégico — o que abre espaço para pressão sobre alocação de capital e sucessão.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- Painel Gerdau ---------- -->
+    <div class="tabpanel" id="p-gerdau" role="tabpanel" aria-labelledby="t-gerdau" tabindex="0" hidden>
+      <div class="grid grid-4" style="margin-bottom:24px">
+        <div class="stat">
+          <span class="stat-label">Receita líquida · 2T26</span>
+          <div class="stat-value">R$&nbsp;17,9<small>bi</small></div>
+          <p class="stat-note"><span class="stat-delta up">▲ 2% a/a</span> · 2,9 Mt embarcadas</p>
+        </div>
+        <div class="stat">
+          <span class="stat-label">EBITDA ajustado</span>
+          <div class="stat-value">R$&nbsp;3,4<small>bi</small></div>
+          <p class="stat-note"><span class="stat-delta up">▲ 33,9% a/a</span> · margem 19,2%</p>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Lucro líquido ajustado</span>
+          <div class="stat-value">R$&nbsp;1,5<small>bi</small></div>
+          <p class="stat-note"><span class="stat-delta up">▲ 70% a/a</span> · melhor desde 3T23</p>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Alavancagem</span>
+          <div class="stat-value">0,69<small>x</small></div>
+          <p class="stat-note"><span class="stat-delta up">▼ 0,74x no 1T26</span> · dívida líquida / EBITDA</p>
+        </div>
+      </div>
+
+      <div class="callout callout--gerdau reveal" style="margin-bottom:28px">
+        <span class="eyebrow">O número que resume a Gerdau hoje</span>
+        <p>A América do Norte respondeu por <strong>R$ 2,6 bilhões</strong> dos R$ 3,4 bilhões de
+        EBITDA ajustado consolidado — cerca de <strong>76%</strong>, com alta de 59% no ano. A
+        Gerdau não é mais, em termos de geração de valor, uma siderúrgica brasileira: é uma
+        produtora local dentro do mercado mais protegido do mundo, que por acaso tem sede no
+        Brasil.</p>
+      </div>
+
+      <figure class="figure" style="margin:0 0 24px">
+        <div class="figure-head">
+          <div class="figure-title">De onde vem o EBITDA da Gerdau</div>
+          <div class="figure-sub">EBITDA ajustado do 2T26, em R$ bilhões. A operação
+          norte-americana, protegida pela tarifa de 50% e puxada por data centers, energia
+          renovável e manufatura, virou o centro de gravidade da companhia.</div>
+        </div>
+        <div class="figure-body" data-chart="gerdau-mix"></div>
+        <figcaption class="figure-source">EBITDA consolidado (R$ 3,4 bi) e da América do Norte
+        (R$ 2,6 bi) reportados no 2T26. <b>“Demais operações” é calculado por diferença</b> e
+        agrega Brasil, Aços Especiais, América do Sul e eliminações — não é uma linha
+        reportada.</figcaption>
+      </figure>
+
+      <div class="grid grid-2" style="margin-bottom:24px">
+        <div class="card">
+          <h4 style="margin-bottom:14px">Saúde financeira</h4>
+          <div class="kv">
+            <div class="kv-row"><span class="kv-k">Dívida bruta (jun/26)</span><span class="kv-v">R$ 13,6 bi<small>−2,0% no trimestre</small></span></div>
+            <div class="kv-row"><span class="kv-k">Alavancagem</span><span class="kv-v">0,69x<small>abaixo da política de dívida</small></span></div>
+            <div class="kv-row"><span class="kv-k">Fluxo de caixa livre (2T26)</span><span class="kv-v">R$ 237 mi<small>vs. −R$ 772 mi no 2T25</small></span></div>
+            <div class="kv-row"><span class="kv-k">Capex do trimestre</span><span class="kv-v">R$ 1,1 bi<small>−27% vs. 4T25</small></span></div>
+            <div class="kv-row"><span class="kv-k">Capex 2026 (guidance)</span><span class="kv-v">R$ 4,7 bi</span></div>
+            <div class="kv-row"><span class="kv-k">Dividendos do trimestre</span><span class="kv-v">R$ 0,23/ação<small>R$ 451,3 mi · pago em 11/09</small></span></div>
+          </div>
+        </div>
+        <div class="card">
+          <h4 style="margin-bottom:14px">Operação e mercado</h4>
+          <div class="kv">
+            <div class="kv-row"><span class="kv-k">EBITDA América do Norte</span><span class="kv-v">R$ 2,6 bi<small>+59% a/a</small></span></div>
+            <div class="kv-row"><span class="kv-k">EBITDA Brasil</span><span class="kv-v">−19,6% a/a<small>ainda pressionado pelo importado</small></span></div>
+            <div class="kv-row"><span class="kv-k">Volume importado no Brasil</span><span class="kv-v">−30%<small>efeito antidumping + cota-tarifa</small></span></div>
+            <div class="kv-row"><span class="kv-k">Produção de aço no Brasil</span><span class="kv-v">+10%<small>vendas −0,3%</small></span></div>
+            <div class="kv-row"><span class="kv-k">Planos vs. longos (Brasil)</span><span class="kv-v">−6,2% / +2,3%</span></div>
+            <div class="kv-row"><span class="kv-k">Ação em 12 meses</span><span class="kv-v">+54,1%<small>R$ 25,13 · abriu o ano a R$ 20,39</small></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h4>Vantagens competitivas</h4>
+          <ul class="ticks pro" style="margin-top:12px">
+            <li><b>Estar dentro do muro.</b> Produz nos EUA, para os EUA. A tarifa de 50% que
+            penaliza o exportador é, para a Gerdau, um subsídio à margem.</li>
+            <li><b>Rota elétrica (EAF) e sucata.</b> Intensidade de carbono muito menor que a
+            rota integrada a carvão — vantagem direta de custo sob o CBAM, que cobra pela emissão
+            embutida.</li>
+            <li><b>Balanço como opção.</b> 0,69x de alavancagem permite atravessar um ciclo
+            brasileiro ruim sem diluir acionista nem cortar capex.</li>
+            <li><b>Demanda estrutural na América do Norte:</b> data centers, energia renovável e
+            reindustrialização — vetores de longo prazo, não ciclo curto.</li>
+            <li><b>Brasil como opcionalidade gratuita.</b> No preço de hoje, a operação
+            doméstica está avaliada como problema; com Selic a 12% e antidumping em vigor, vira
+            alavanca.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Fragilidades e pontos de atenção</h4>
+          <ul class="ticks con" style="margin-top:12px">
+            <li><b>Dependência de uma decisão política.</b> A Section 232 é ato do Executivo
+            americano, não lei — pode ser revertida ou flexibilizada por acordo bilateral.</li>
+            <li><b>Concentração geográfica do lucro.</b> ~76% do EBITDA em uma região torna a
+            tese refém do ciclo industrial americano.</li>
+            <li><b>Fluxo de caixa livre ainda fino.</b> R$ 237 mi no trimestre contra capex
+            anual de R$ 4,7 bi — a conversão de EBITDA em caixa é o ponto a monitorar.</li>
+            <li><b>Brasil ainda no vermelho relativo</b> (−19,6% a/a), com o importado voltando
+            a acelerar em junho.</li>
+            <li><b>Preço.</b> A ação já subiu 54% em 12 meses: parte relevante do
+            reposicionamento macro já está no papel.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- Painel comparativo ---------- -->
+    <div class="tabpanel" id="p-vs" role="tabpanel" aria-labelledby="t-vs" tabindex="0" hidden>
+      <div class="card card--pad-lg" style="margin-bottom:24px">
+        <div class="table-scroll">
+          <table>
+            <caption>Indicadores do 2T26. Valores em moeda e unidade indicadas na linha; a
+            comparação é de perfil, não de escala — as companhias têm portes muito diferentes.</caption>
+            <thead>
+              <tr><th scope="col">Indicador</th><th scope="col">Vale · VALE3</th><th scope="col">Gerdau · GGBR4</th><th scope="col">Leitura</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Receita líquida</td><td>R$ 53,0 bi</td><td>R$ 17,9 bi</td><td>Escalas distintas</td></tr>
+              <tr><td>EBITDA ajustado</td><td>R$ 18,5 bi</td><td>R$ 3,4 bi</td><td>Escalas distintas</td></tr>
+              <tr><td>Variação do EBITDA (a/a)</td><td>−3%</td><td class="win">+33,9%</td><td>Momento com a Gerdau</td></tr>
+              <tr><td>Margem EBITDA</td><td class="win">≈ 35%</td><td>19,2%</td><td>Mineração é estruturalmente mais rentável</td></tr>
+              <tr><td>Variação do lucro (a/a)</td><td>−43%</td><td class="win">+70%</td><td>Direções opostas</td></tr>
+              <tr><td>Alavancagem</td><td>Dív. líq. exp. US$ 16,7 bi</td><td class="win">0,69x</td><td>Ambas confortáveis; Gerdau mais leve</td></tr>
+              <tr><td>Dividend yield (12 m)</td><td class="win">7,1%</td><td>3,11%</td><td>Vale paga; Gerdau reinveste</td></tr>
+              <tr><td>Desempenho da ação (12 m)</td><td>—</td><td class="win">+54,1%</td><td>Reprecificação já em curso na Gerdau</td></tr>
+              <tr><td>Exposição ao preço do minério</td><td>Total</td><td class="win">Indireta (custo)</td><td>Minério barato é insumo barato para a Gerdau</td></tr>
+              <tr><td>Exposição à tarifa dos EUA</td><td>Neutra</td><td class="win">Beneficiada</td><td>Produção local dentro da barreira</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <figure class="figure" style="margin:0">
+          <div class="figure-head">
+            <div class="figure-title">Momento operacional · variação anual no 2T26</div>
+            <div class="figure-sub">Mesma cadeia, mesmo trimestre, direções opostas.</div>
+          </div>
+          <div class="figure-body" data-chart="momento"></div>
+          <figcaption class="figure-source">Resultados do 2T26 divulgados por Vale e Gerdau.</figcaption>
+        </figure>
+
+        <div class="card" style="background:var(--surface-2)">
+          <h4 style="margin-bottom:6px">Como ler a tabela</h4>
+          <p style="font-size:.9rem">A Vale ganha em <strong>rentabilidade e retorno de
+          caixa</strong>: margem de 35% e yield de 7,1% são números que a Gerdau não alcança e
+          nem tenta alcançar. A Gerdau ganha em <strong>direção</strong>: EBITDA +33,9%, lucro
+          +70%, alavancagem caindo e ação +54%.</p>
+          <p style="font-size:.9rem">A pergunta do trabalho não é “qual empresa é melhor”, e sim
+          <strong>qual delas o cenário macro identificado favorece</strong>. Uma margem alta em
+          declínio e uma margem menor em expansão não valem a mesma coisa quando o horizonte é de
+          cinco anos.</p>
+          <p style="font-size:.9rem;margin-bottom:0">Há ainda um vínculo direto entre as duas:
+          <strong>minério mais barato é insumo mais barato para a siderurgia</strong>. O mesmo
+          choque de oferta que comprime a Vale alivia o custo da rota integrada e derruba o preço
+          da sucata na margem — a cadeia transfere valor de um elo para o outro.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 03 SIMULADOR ============================ -->
+<section class="section" id="simulador">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">03 · Teste de sensibilidade</span>
+      <h2>Quanto a tese depende de cada variável?</h2>
+      <p>Uma tese só é útil se for falseável. Este modelo simplificado conecta as três variáveis
+      macro da Seção 01 ao EBITDA anualizado das duas empresas. Mexa nos controles e veja para
+      qual lado a recomendação se inclina — as premissas estão abertas ao final.</p>
+    </div>
+
+    <div class="card card--pad-lg reveal">
+      <div class="sim">
+        <div class="sim-controls">
+          <div>
+            <div class="ctrl-head">
+              <label class="ctrl-label" for="s-minerio">Minério de ferro 62% Fe</label>
+              <output class="ctrl-out" id="o-minerio">US$ 99/t</output>
+            </div>
+            <input type="range" id="s-minerio" min="60" max="140" step="1" value="99">
+            <p class="ctrl-hint">Faixa das projeções de mercado para 2026: US$ 85 (BTG) a
+            US$ 104 (S&amp;P Global).</p>
+          </div>
+
+          <div>
+            <div class="ctrl-head">
+              <label class="ctrl-label" for="s-premio">Prêmio de preço nos EUA</label>
+              <output class="ctrl-out" id="o-premio">US$ 0/t</output>
+            </div>
+            <input type="range" id="s-premio" min="-150" max="250" step="5" value="0">
+            <p class="ctrl-hint">Variação do spread metálico na América do Norte frente ao 2T26.
+            Negativo simula flexibilização da tarifa de 50%.</p>
+          </div>
+
+          <div>
+            <div class="ctrl-head">
+              <label class="ctrl-label" for="s-selic">Selic</label>
+              <output class="ctrl-out" id="o-selic">13,75%</output>
+            </div>
+            <input type="range" id="s-selic" min="8" max="16" step="0.25" value="13.75">
+            <p class="ctrl-hint">Afeta a demanda brasileira de aços longos (construção civil).
+            Consenso projeta 12,00% para o fim de 2027.</p>
+          </div>
+
+          <button type="button" id="s-reset" class="tab" style="background:var(--surface-3);color:var(--ink);justify-content:center;width:100%;border-radius:8px">Voltar ao cenário-base (2T26)</button>
+        </div>
+
+        <div class="sim-out">
+          <div class="sim-cards">
+            <div class="sim-card vale">
+              <div class="sim-co">Vale · EBITDA anual</div>
+              <div class="sim-num" id="out-vale">15,4<small>US$ bi</small></div>
+              <p class="sim-base">vs. base: <b id="d-vale" class="flat">0,0%</b></p>
+            </div>
+            <div class="sim-card gerdau">
+              <div class="sim-co">Gerdau · EBITDA anual</div>
+              <div class="sim-num" id="out-gerdau">13,6<small>R$ bi</small></div>
+              <p class="sim-base">vs. base: <b id="d-gerdau" class="flat">0,0%</b></p>
+            </div>
+          </div>
+
+          <div class="tilt">
+            <span class="eyebrow">Inclinação da tese</span>
+            <div class="tilt-track">
+              <div class="tilt-mark" id="tiltMark"></div>
+            </div>
+            <div class="tilt-ends"><span>◀ favorece VALE</span><span>favorece GERDAU ▶</span></div>
+            <p class="tilt-verdict" id="tiltText">No cenário-base do 2T26 as duas teses se
+            equilibram — a escolha depende do horizonte, não do trimestre.</p>
+          </div>
+        </div>
+      </div>
+
+      <details class="formula">
+        <summary>Premissas e fórmulas do modelo — leia antes de citar qualquer número daqui</summary>
+        <div class="formula-body">
+          <p><b>Vale.</b> <code>EBITDA = (índice × 0,88 − 50) × 340 Mt + 2,8</code>, em US$ bilhões.
+          O fator 0,88 aproxima o preço realizado frente ao índice 62% Fe (ajustes de qualidade,
+          umidade e preço provisório). O custo de US$ 50/t é o caixa all-in entregue na China
+          (C1 de ~US$ 23 + frete + royalties). O volume de 340 Mt é o ponto médio do guidance de
+          2026 (335–345 Mt). A parcela fixa de US$ 2,8 bi representa Metais Básicos (cobre e
+          níquel), que o modelo não sensibiliza. Sensibilidade resultante: cada
+          <b>US$ 10/t</b> no índice move o EBITDA em cerca de <b>US$ 3,0 bi</b> — consistente com
+          a regra de bolso usada pelo mercado.</p>
+          <p><b>Gerdau.</b> <code>EBITDA = 10,4 + (Δprêmio × 4,4 Mt × câmbio) + 3,2 × (1 + 0,06 × (13,75 − Selic))</code>,
+          em R$ bilhões. Os R$ 10,4 bi são o EBITDA da América do Norte do 2T26 anualizado
+          (R$ 2,6 bi × 4); os R$ 3,2 bi são as demais operações, obtidas por diferença. Assume-se
+          embarque anual de 4,4 Mt na América do Norte, câmbio de R$ 5,20 e elasticidade de
+          <b>6% de EBITDA Brasil por ponto percentual de Selic</b>.</p>
+          <p><b>Limitações.</b> O modelo é linear, ignora hedge, alavancagem operacional,
+          variação de estoques, mix de produtos, capital de giro e efeitos de segunda ordem
+          (minério mais barato reduz o custo da siderurgia, o que na prática atenua parte da
+          divergência mostrada aqui). O câmbio é fixo em R$ 5,20. A elasticidade da Selic é uma
+          premissa do autor, não um dado divulgado. Serve para <b>ordem de grandeza e direção</b>,
+          não para precificação.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 04 CONCLUSÃO ============================ -->
+<section class="section" id="conclusao">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">04 · Conclusão</span>
+      <h2>A tese única</h2>
+    </div>
+
+    <div class="callout callout--neutral reveal" style="margin-bottom:44px">
+      <p>O cenário macro aponta para uma <strong>transferência de valor dentro da própria cadeia
+      ferrosa</strong>: com Simandou entrando, a demanda chinesa em declínio estrutural e a curva
+      de custo empurrando o minério para US$ 85–105/t, o elo da matéria-prima perde poder de
+      preço; simultaneamente, a muralha tarifária construída em 2025–26 (EUA 50%, Brasil 25%,
+      CBAM na Europa) devolve poder de preço a quem <strong>produz aço dentro do mercado que
+      consome</strong>. A análise fundamentalista confirma que as duas empresas já estão nos
+      lados opostos dessa transferência: a Vale entregou produção recorde com lucro 43% menor;
+      a Gerdau fez seu melhor EBITDA em onze trimestres, com 76% dele vindo de trás da barreira
+      americana. <strong>A Vale segue sendo o melhor ativo de renda da bolsa brasileira; a Gerdau
+      é o melhor ativo de posicionamento.</strong> São teses diferentes — e é por isso que as
+      recomendações divergem.</p>
+    </div>
+
+    <div class="grid grid-2 reveal" style="margin-bottom:52px">
+      <article class="card card--pad-lg" style="border-top:3px solid var(--vale)">
+        <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:6px">
+          <h3 style="margin:0">Vale · VALE3</h3>
+          <span style="font-family:var(--mono);font-size:.78rem;letter-spacing:.1em;color:var(--vale);font-weight:600">MANTER</span>
+        </div>
+        <p style="font-size:.94rem">Comprar por <b>fluxo de caixa</b>, não por valorização.
+        A 3,8x EV/EBITDA, com dividend yield projetado entre 7,5% (Santander) e 10% (BTG),
+        recompra de 2,3% do capital e desembolsos de Brumadinho caindo de US$ 900 mi para
+        US$ 300 mi até 2028, a Vale é uma máquina de distribuição barata.</p>
+        <p style="font-size:.94rem">O que <em>não</em> se deve esperar dela é reprecificação de
+        múltiplo. Para isso, seria preciso que cobre e níquel deixassem de ser opcionalidade e
+        virassem o motor do EBITDA — o que ainda não aconteceu.</p>
+        <div class="note"><b>O que mudaria a recomendação para COMPRAR:</b> minério estabilizado
+        acima de US$ 110/t, C1 voltando abaixo de US$ 21/t, ou Metais Básicos superando 25% do
+        EBITDA consolidado.</div>
+      </article>
+
+      <article class="card card--pad-lg" style="border-top:3px solid var(--gerdau)">
+        <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:6px">
+          <h3 style="margin:0">Gerdau · GGBR4</h3>
+          <span style="font-family:var(--mono);font-size:.78rem;letter-spacing:.1em;color:var(--gerdau);font-weight:600">COMPRAR</span>
+        </div>
+        <p style="font-size:.94rem">É o ativo cujo posicionamento coincide com todas as forças
+        macro identificadas: produção local em mercado com tarifa de 50%, rota elétrica de baixo
+        carbono num mundo com CBAM, insumo (minério e sucata) ficando mais barato, e alavancagem
+        de 0,69x para atravessar o ciclo brasileiro ruim sem depender de mercado de capitais.</p>
+        <p style="font-size:.94rem">A operação brasileira, hoje um peso (−19,6% a/a), é
+        <b>opcionalidade praticamente gratuita</b>: um corte de Selic para 12% em 2027 com
+        antidumping em vigor a transforma de lastro em alavanca.</p>
+        <div class="note"><b>A ressalva honesta:</b> a ação já subiu 54,1% em 12 meses. Boa parte
+        do reposicionamento está no preço — a tese é de <b>continuidade</b> de reprecificação, e
+        exige entrada disciplinada, não perseguição.</div>
+      </article>
+    </div>
+
+    <h3 class="reveal" style="margin-bottom:24px">Como a tese evolui nos próximos anos</h3>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-when">2026 – 2027<span>Gerdau &gt; Vale</span></div>
+        <div class="tl-body">
+          <h4>A janela do atraso</h4>
+          <p>O ramp-up mais lento de Simandou (48 meses, e apenas 15 Mt em 2026) segura o minério
+          na faixa de US$ 95–105/t e evita a queda mais dura — a Vale sustenta o dividendo, mas
+          sem gatilho de reprecificação. A Gerdau captura o pico do prêmio tarifário americano e,
+          se a Selic começar a cair, soma a recuperação brasileira. <b>Este é o período em que a
+          divergência entre as duas é maior.</b></p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-when">2028 – 2029<span>Ponto de estresse</span></div>
+        <div class="tl-body">
+          <h4>Simandou em regime e o teste da curva de custo</h4>
+          <p>Com o projeto próximo da capacidade plena, a sobreoferta deixa de ser projeção e
+          vira preço. É aqui que a tese da Vale é testada de verdade: se o minério buscar
+          US$ 80/t, o dividendo cai junto e a recomendação de MANTER precisa ser revisada. Para a
+          Gerdau, o risco muda de natureza — passa a ser o ciclo industrial americano e a
+          durabilidade política da Section 232, não mais o aço chinês.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-when">2030+<span>A tese pode inverter</span></div>
+        <div class="tl-body">
+          <h4>Se o cobre virar o motor, a Vale muda de categoria</h4>
+          <p>A eletrificação global aponta para déficit estrutural de cobre. A Vale já elevou o
+          guidance para 360–380 kt e mira crescimento acelerado. Se essa divisão passar a
+          responder por parcela relevante do EBITDA, a companhia deixa de ser precificada como
+          mineradora de ferro em ciclo maduro e passa a ser precificada como produtora de metais
+          de transição — e <b>é nesse cenário, e só nele, que a Vale volta a ser a melhor tese da
+          cadeia.</b> É a evolução mais importante a monitorar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 05 RISCOS ============================ -->
+<section class="section" id="riscos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">05 · Riscos</span>
+      <h2>O que derruba esta tese</h2>
+      <p>Posicionados por probabilidade e impacto. Os riscos de maior impacto não são
+      operacionais — são políticos.</p>
+    </div>
+
+    <div class="risk-matrix reveal" style="margin-bottom:44px" aria-hidden="true">
+      <div class="rm-axis"></div>
+      <div class="rm-axis">Prob. baixa</div>
+      <div class="rm-axis">Prob. média</div>
+      <div class="rm-axis">Prob. alta</div>
+
+      <div class="rm-axis y">Impacto alto</div>
+      <div class="rm-cell"><span class="rm-tag crit"><b>R1</b>Ruptura de barragem / evento ESG</span></div>
+      <div class="rm-cell"><span class="rm-tag crit"><b>R2</b>Reversão da Section 232</span><span class="rm-tag crit"><b>R3</b>Recessão industrial nos EUA</span></div>
+      <div class="rm-cell"><span class="rm-tag ser"><b>R4</b>Minério abaixo de US$ 80/t</span></div>
+
+      <div class="rm-axis y">Impacto médio</div>
+      <div class="rm-cell"><span class="rm-tag warn"><b>R5</b>Mudança tributária na mineração</span></div>
+      <div class="rm-cell"><span class="rm-tag ser"><b>R6</b>Triangulação do aço chinês</span></div>
+      <div class="rm-cell"><span class="rm-tag ser"><b>R7</b>Selic alta por mais tempo</span><span class="rm-tag warn"><b>R8</b>Custo C1 seguir subindo</span></div>
+
+      <div class="rm-axis y">Impacto baixo</div>
+      <div class="rm-cell"></div>
+      <div class="rm-cell"><span class="rm-tag warn"><b>R9</b>Capex sem retorno</span></div>
+      <div class="rm-cell"><span class="rm-tag warn"><b>R10</b>Volatilidade cambial</span></div>
+    </div>
+
+    <div class="risk-list reveal">
+      <div class="risk-item"><span class="risk-badge crit">R1 · Vale</span><div><h4>Evento ESG ou ruptura de barragem</h4><p>Probabilidade baixa, impacto devastador. As provisões de Brumadinho (US$ 1,77 bi) e Samarco (US$ 2,10 bi) mostram a ordem de grandeza. Um novo evento não apenas zera o dividendo — redefine a licença social para operar.</p></div></div>
+      <div class="risk-item"><span class="risk-badge crit">R2 · Gerdau</span><div><h4>Reversão ou flexibilização da Section 232</h4><p>A tarifa de 50% é ato do Executivo americano, não legislação. Um acordo bilateral, uma decisão judicial ou uma mudança de governo podem esvaziar o prêmio que hoje sustenta 76% do EBITDA da companhia. <b>É o risco central da recomendação de compra.</b></p></div></div>
+      <div class="risk-item"><span class="risk-badge crit">R3 · Gerdau</span><div><h4>Recessão industrial nos Estados Unidos</h4><p>Data centers, energia renovável e manufatura são os motores da demanda norte-americana. São ciclos de investimento — e ciclos de investimento param rápido quando o custo de capital sobe ou a expectativa de retorno cai.</p></div></div>
+      <div class="risk-item"><span class="risk-badge ser">R4 · Vale</span><div><h4>Minério abaixo de US$ 80/t de forma sustentada</h4><p>Cenário em que Simandou acelera acima do previsto <em>e</em> a China não estimula. Pelo modelo da Seção 03, o EBITDA cairia para cerca de US$ 10 bi — nível em que dividendo, recompra e capex de crescimento passam a competir pelo mesmo caixa.</p></div></div>
+      <div class="risk-item"><span class="risk-badge ser">R6 · Gerdau</span><div><h4>Triangulação do aço chinês</h4><p>Barreira sobre origem não é barreira sobre produto. O excedente chinês pode entrar via terceiros países com beneficiamento mínimo — as importações brasileiras já voltaram a acelerar em junho, com 476 mil t no mês, apesar do antidumping.</p></div></div>
+      <div class="risk-item"><span class="risk-badge ser">R7 · Gerdau</span><div><h4>Selic alta por mais tempo</h4><p>Se a taxa não convergir para 12% em 2027, a operação brasileira segue drenando resultado e a “opcionalidade gratuita” continua sendo apenas custo. É o principal risco à parte doméstica da tese.</p></div></div>
+      <div class="risk-item"><span class="risk-badge warn">R8 · Vale</span><div><h4>Custo C1 seguir em trajetória de alta</h4><p>O guidance já foi revisado de US$ 20,0–21,5/t para US$ 22,5–23,5/t. Cada dólar adicional de C1 corta cerca de US$ 340 milhões de EBITDA anual e erode a vantagem de primeiro quartil que sustenta toda a tese defensiva.</p></div></div>
+      <div class="risk-item"><span class="risk-badge warn">R5 · Vale</span><div><h4>Mudança tributária ou pressão política</h4><p>Corporação sem controlador definido em setor estratégico: alterações em CFEM, royalties ou interferência na alocação de capital afetam diretamente a capacidade de distribuição que fundamenta a recomendação.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 06 FONTES ============================ -->
+<section class="section" id="fontes">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">06 · Evidências</span>
+      <h2>Fontes utilizadas</h2>
+      <p>Todos os números citados vêm das referências abaixo, consultadas em setembro de 2026.
+      Onde uma estimativa é do autor e não de uma fonte, isso está marcado no próprio gráfico ou
+      no bloco de premissas.</p>
+    </div>
+
+    <div class="sources reveal">
+      <div class="src-group">
+        <h4>Macro · minério de ferro e Simandou</h4>
+        <ul class="src-list">
+          <li><a href="https://www.infomoney.com.br/mercados/simandou-o-que-e-o-projeto-e-como-tem-ditado-o-rumo-dos-precos-do-minerio-de-ferro/" target="_blank" rel="noopener">Simandou: o que é o projeto e como tem ditado o rumo dos preços do minério de ferro <span>InfoMoney</span></a></li>
+          <li><a href="https://www.itiger.com/news/2590531042" target="_blank" rel="noopener">Vale Emerges as “Clear Winner” From Simandou Delay, RBC Says <span>RBC Capital Markets via Tiger Newspress</span></a></li>
+          <li><a href="https://www.suno.com.br/noticias/sp-global-rebaixa-minerio-de-ferro-preco-evm/" target="_blank" rel="noopener">S&amp;P Global rebaixa projeção do minério de ferro para US$ 104 <span>Suno Notícias</span></a></li>
+          <li><a href="https://investnews.com.br/negocios/vale-reduz-estimativa-producao-minerio-2026/" target="_blank" rel="noopener">Vale reduz projeção de minério para 2026; veja a nova meta <span>InvestNews</span></a></li>
+          <li><a href="https://www.noticiasagricolas.com.br/noticias/agronegocio/425964-minerio-de-ferro-amplia-ganhos-com-noticias-sobre-medidas-de-estimulo-ao-setor-imobiliario-na-china.html" target="_blank" rel="noopener">Minério amplia ganhos com estímulo ao setor imobiliário na China <span>Notícias Agrícolas</span></a></li>
+        </ul>
+      </div>
+
+      <div class="src-group">
+        <h4>Macro · China, aço e política comercial</h4>
+        <ul class="src-list">
+          <li><a href="https://www.brasilmineral.com.br/noticias/demanda-mundial-deve-crescer-em-2026-e-2027" target="_blank" rel="noopener">Demanda mundial de aço deve crescer em 2026 e 2027 <span>worldsteel via Brasil Mineral</span></a></li>
+          <li><a href="https://hdepaola.substack.com/p/industria-siderurgica-da-china-enfrenta" target="_blank" rel="noopener">Indústria siderúrgica da China enfrenta dura realidade com excesso de capacidade <span>H. de Paola</span></a></li>
+          <li><a href="https://www.whitecase.com/insight-alert/united-states-modifies-steel-aluminum-and-copper-section-232-tariffs" target="_blank" rel="noopener">United States modifies steel, aluminum and copper Section 232 tariffs <span>White &amp; Case</span></a></li>
+          <li><a href="https://siderurgiabrasil.com.br/2026/01/30/governo-define-elevacao-de-tarifa-para-acos-importados/" target="_blank" rel="noopener">Governo define elevação de tarifa para aços importados (GECEX 849) <span>Siderurgia Brasil</span></a></li>
+          <li><a href="https://www.cnnbrasil.com.br/infra/importacoes-de-aco-caem-176-no-1-semestre-com-medidas-antidumping/" target="_blank" rel="noopener">Importações de aço caem 17,6% no 1º semestre com medidas antidumping <span>CNN Brasil</span></a></li>
+          <li><a href="https://pt.craneww.com/Centro-de-Conhecimento/%C3%BAltimas-not%C3%ADcias-e-informa%C3%A7%C3%B5es/transi%C3%A7%C3%A3o-cbam/" target="_blank" rel="noopener">EU CBAM 2026: relatórios anuais, custos e impacto no comércio <span>Crane Worldwide</span></a></li>
+        </ul>
+      </div>
+
+      <div class="src-group">
+        <h4>Macro · Brasil</h4>
+        <ul class="src-list">
+          <li><a href="https://www.infomoney.com.br/economia/boletim-focus-projecoes-31082026/" target="_blank" rel="noopener">Boletim Focus de 31/08/2026: Selic 13,75%, dólar R$ 5,20, PIB 1,92% <span>Banco Central via InfoMoney</span></a></li>
+          <li><a href="https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/boletim-focus-mercado-preve-reducao-da-inflacao-e-do-pib-de-2026" target="_blank" rel="noopener">Boletim Focus: mercado prevê redução da inflação e do PIB de 2026 <span>Agência Brasil</span></a></li>
+        </ul>
+      </div>
+
+      <div class="src-group">
+        <h4>Vale · resultados e guidance</h4>
+        <ul class="src-list">
+          <li><a href="https://www.infomoney.com.br/mercados/vale-vale3-resultados-segundo-trimestre-2026/" target="_blank" rel="noopener">Vale tem lucro líquido de US$ 1,37 bi no 2T26, queda anual de 35% <span>InfoMoney</span></a></li>
+          <li><a href="https://revistamineracao.com.br/2026/07/31/vale-lucro-2-trimestre-2026-projecoes-cobre-niquel/" target="_blank" rel="noopener">Vale lucra R$ 6,85 bi no 2T26 e eleva projeções de cobre e níquel <span>Revista Mineração</span></a></li>
+          <li><a href="https://revistamineracao.com.br/2026/07/21/vale-registra-recordes-na-producao-de-minerio-de-ferro-cobre-e-niquel-no-2t26/" target="_blank" rel="noopener">Vale registra recordes de produção de minério, cobre e níquel no 2T26 <span>Revista Mineração</span></a></li>
+          <li><a href="https://conteudos.xpi.com.br/acoes/relatorios/vale-vale3-resultados-marginalmente-melhores-guidance-de-custos-revisado-para-cima-conforme-esperado/" target="_blank" rel="noopener">Vale: guidance de custos revisado para cima (C1 US$ 22,5–23,5/t) <span>XP Investimentos</span></a></li>
+          <li><a href="https://www.moneytimes.com.br/vale-vale3-balanco-do-2t26-agrada-analistas-apesar-de-alta-nos-custos-do-minerio-o-que-fazer-com-as-acoes-lmrs/" target="_blank" rel="noopener">Balanço do 2T26 agrada analistas: proventos de R$ 2,03/ação e recompra <span>Money Times</span></a></li>
+          <li><a href="https://www.seudinheiro.com/2026/empresas/dividendos-da-vale-vale3-o-gatilho-que-ainda-passa-despercebido-mas-pode-colocar-mais-proventos-no-bolso-de-quem-tem-as-acoes-bdap/" target="_blank" rel="noopener">Dívida líquida expandida, provisões de Brumadinho e Samarco e cronograma de desembolsos <span>Seu Dinheiro</span></a></li>
+          <li><a href="https://www.suno.com.br/noticias/vale-vale3-dividend-yield-acoes-2026-go/" target="_blank" rel="noopener">Vale deve ter dividend yield de 10% em 2026, diz BTG <span>Suno Notícias</span></a></li>
+        </ul>
+      </div>
+
+      <div class="src-group">
+        <h4>Gerdau · resultados e operação</h4>
+        <ul class="src-list">
+          <li><a href="https://www.infomoney.com.br/mercados/gerdau-ggbr4-resultados-segundo-trimestre-2026/" target="_blank" rel="noopener">Gerdau tem alta de 70% no lucro do 2T26, para R$ 1,5 bilhão <span>InfoMoney</span></a></li>
+          <li><a href="https://bpmoney.com.br/economia/gerdau-ggbr4-ebitda-2t26-america-do-norte/" target="_blank" rel="noopener">Gerdau tem EBITDA de R$ 3,4 bi no 2T26; América do Norte impulsiona o resultado <span>BP Money</span></a></li>
+          <li><a href="https://conteudos.xpi.com.br/acoes/relatorios/gerdau-ggbr4-america-do-norte-impulsionando-mais-uma-surpresa-positiva-de-ebitda-revisao-do-2t26/" target="_blank" rel="noopener">América do Norte impulsionando mais uma surpresa positiva de EBITDA <span>XP Investimentos</span></a></li>
+          <li><a href="https://oespecialista.safra.com.br/gerdau-gbrr4-resultados-2t26/" target="_blank" rel="noopener">Gerdau supera expectativas no 2T26 com forte caixa (alavancagem 0,69x) <span>Banco Safra</span></a></li>
+          <li><a href="https://revistamineracao.com.br/2026/08/06/gerdau-lucra-r-15-bi-no-2t26-e-reforca-investimentos-de-r-47-bi-em-2026/" target="_blank" rel="noopener">Gerdau reforça investimentos de R$ 4,7 bi em 2026 <span>Revista Mineração</span></a></li>
+          <li><a href="https://investnews.com.br/negocios/gerdau-eua-tarifas-aco-2t26/" target="_blank" rel="noopener">Sob nova onda de tarifas, aposta da Gerdau nos EUA garante lucro de R$ 1,5 bi <span>InvestNews</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="disclaimer reveal">
+      <p><b>Aviso.</b> Este material foi produzido como trabalho acadêmico da disciplina e tem
+      finalidade exclusivamente didática. Não constitui recomendação de investimento, análise
+      regulada pela CVM (Resolução 20) nem oferta de compra ou venda de valores mobiliários.
+      Os dados foram coletados de fontes públicas em setembro de 2026 e podem estar
+      desatualizados no momento da leitura. Os modelos da Seção 03 são simplificações do autor,
+      com premissas declaradas.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>Atividade Conjunta Macro + Fundamentalista · Setor de Mineração &amp; Siderurgia ·
+    Vale (VALE3) e Gerdau (GGBR4) · Base de dados do 2T26 · Setembro de 2026.</p>
+    <p><a href="#topo">Voltar ao topo ↑</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
