@@ -47,7 +47,7 @@
       'font-weight': opts.weight || 400,
       'text-anchor': opts.anchor || 'start',
       'dominant-baseline': opts.baseline || 'auto',
-      'font-family': opts.mono ? 'ui-monospace, SFMono-Regular, Menlo, monospace' : 'inherit',
+      'font-family': opts.mono ? '"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace' : 'inherit',
       'letter-spacing': opts.tracking || null
     }, text);
   }
